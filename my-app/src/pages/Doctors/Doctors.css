@@ -1,0 +1,100 @@
+.doctors_boxs {
+    width: 900px;
+    margin: auto;
+    margin-top: 20px;
+
+    padding: 5px 5px;
+    /* padding-top: ; */
+    background: #fff;
+}
+
+.doctors_selcet {
+    width: 250px;
+}
+
+.doctors_asasa {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.doctors_xbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.doctors_asasa .ant-btn {
+    margin-top: 0px;
+    width: 70px;
+    height: 30px;
+    padding: 0;
+    background: #480087;
+    line-height: 15px !important;
+}
+
+.doctors_title {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.doctors_doctors {
+
+    display: flex;
+    width: 280px;
+    height: 100px;
+    margin-top: 20px;
+
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.doctors_xheard {
+    position: relative;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.bdoc_sdas {
+    position: absolute;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    box-shadow: -5px -7px 1px #f1ebf6;
+}
+
+.doctors_xheard img {
+    width: 100%;
+    height: 100%;
+}
+
+.doctors_xright {
+    margin-left: 10px;
+}
+
+.doctors_xright .title {
+    font-weight: 700;
+}
+
+.doctors_xright .titletw {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.doctors_xright .titletr {
+    /* margin-top: 10px; */
+    font-size: 12px;
+    color: #adb0b5;
+
+}
+
+.doctors_xright .dsds {
+    font-size: 12px;
+    color: #8c5fab;
+    cursor: pointer;
+    font-weight: 700;
+
+}
