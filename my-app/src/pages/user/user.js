@@ -65,10 +65,10 @@ onChange = (key) => {
     <RestOutlined />
     </div>
     <div className='user_btn'>
-        Uplod New Photo
+        Upload New Photo
     </div>
 
-    <div className='user_shuo'><p>Uploda a new avatar.larger imange will be resized automatically.</p>
+    <div className='user_shuo'><p>Upload a new Photo.larger imange will be resized automatically.</p>
     <p className='vxcfrftgy'> Maxinmum upload size id <span className='hikyuk'>1 MB</span></p>
      </div>
      <p className='sdzxxc'>
@@ -85,14 +85,14 @@ onChange = (key) => {
     </div>
     <div className='inas'>
        <p className='inysd'>  Gender</p>
-    <Input placeholder="James" />
+    <Input placeholder="Female" />
     </div>
     <div className='inas'>
        <p className='inysd'>  Password</p>
        <Input.Password placeholder="input password" />
     </div>
     <div className='inas'>
-       <p className='inysd'>  Confirm Pasword</p>
+       <p className='inysd'>  Confirm Password</p>
        <Input.Password placeholder="input password" />
     </div>
 
@@ -108,7 +108,7 @@ onChange = (key) => {
     <div className='inas'>
        <p className='inysd'> Social Profile</p>
        <Input
-      placeholder="Enter your username"
+      placeholder="Enter your Email"
       prefix={<WeiboSquareOutlined className="site-form-item-icon" />}
    
     />
@@ -116,7 +116,7 @@ onChange = (key) => {
     <div className='inas'>
        <p className='inysd'> Social Profile</p>
        <Input
-      placeholder="Enter your username"
+      placeholder="Enter your Email"
       prefix={<TwitterOutlined className="site-form-item-icon" />}
    
     />

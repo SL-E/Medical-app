@@ -182,7 +182,7 @@ export default class About extends React.Component {
         <DesktopOutlined />
         </span>
 
-        <div className="about_title">Make it easy.</div>
+        <div className="about_title">Best online service!</div>
         <div className="about_titleone">Book in mintes</div>
         <div className="about_titleone">No waiting, no quering</div>
         <div className="about_titleone">NZ cheapest onling doctor service</div>
@@ -193,7 +193,7 @@ export default class About extends React.Component {
         <DesktopOutlined />
         </span>
 
-        <div className="about_title">Make it easy.</div>
+        <div className="about_title">Comprehensive doctors!</div>
         <div className="about_titleone">Book in mintes</div>
         <div className="about_titleone">No waiting, no quering</div>
         <div className="about_titleone">NZ cheapest onling doctor service</div>

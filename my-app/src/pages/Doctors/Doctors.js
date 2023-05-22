@@ -23,41 +23,41 @@ export default class Doctors extends React.Component {
     style={{
       width: '100%',
     }}
-    placeholder="select one country"
-    defaultValue={['china']}
+    placeholder="select one city"
+    defaultValue={['Wellington']}
     onChange={handleChange}
     optionLabelProp="label"
   >
-    <Option value="china" label="China">
+    <Option value="Wellington" label="Wellington">
       <Space>
-        <span role="img" aria-label="China">
-          🇨🇳
+        <span role="img" aria-label="Wellington">
+         WEL
         </span>
-        China (中国)
+        Wellington 
       </Space>
     </Option>
-    <Option value="usa" label="USA">
+    <Option value="Auckland" label="Auckland">
       <Space>
-        <span role="img" aria-label="USA">
-          🇺🇸
+        <span role="img" aria-label="Auckland">
+         AKL
         </span>
-        USA (美国)
+        Auckland
       </Space>
     </Option>
-    <Option value="japan" label="Japan">
+    <Option value="Christchurch" label="Christchurch">
       <Space>
-        <span role="img" aria-label="Japan">
-          🇯🇵
+        <span role="img" aria-label="Christchurch">
+         CHC
         </span>
-        Japan (日本)
+        Christchurch
       </Space>
     </Option>
-    <Option value="korea" label="Korea">
+    <Option value="Hamilton" label="Hamilton">
       <Space>
-        <span role="img" aria-label="Korea">
-          🇰🇷
+        <span role="img" aria-label="Hamilton">
+         HMT
         </span>
-        Korea (韩国)
+        Hamilton
       </Space>
     </Option>
   </Select>
@@ -69,41 +69,41 @@ export default class Doctors extends React.Component {
     style={{
       width: '100%',
     }}
-    placeholder="select one country"
-    defaultValue={['china']}
+    placeholder="select one hospital"
+    defaultValue={['Alice Springs Hospital']}
     onChange={handleChange}
     optionLabelProp="label"
   >
-    <Option value="china" label="China">
+    <Option value="Alice Springs Hospital" label="Alice Springs Hospital">
       <Space>
-        <span role="img" aria-label="China">
-          🇨🇳
+        <span role="img" aria-label="Alice Springs Hospital">
+          Hospital
         </span>
-        China (中国)
+        Alice Springs Hospital 
       </Space>
     </Option>
-    <Option value="usa" label="USA">
+    <Option value="Sen Health Clinic" label="Sen Health Clinic">
       <Space>
-        <span role="img" aria-label="USA">
-          🇺🇸
+        <span role="img" aria-label="Sen Health Clinic">
+          Clinic
         </span>
-        USA (美国)
+        Sen Health Clinic 
       </Space>
     </Option>
-    <Option value="japan" label="Japan">
+    <Option value="Enrich Living Sercives" label="Enrich Living Sercives">
       <Space>
-        <span role="img" aria-label="Japan">
-          🇯🇵
+        <span role="img" aria-label="Enrich Living Sercives">
+        Sercives
         </span>
-        Japan (日本)
+        Enrich Living Sercives 
       </Space>
     </Option>
-    <Option value="korea" label="Korea">
+    <Option value="Kimberley Clinic" label="Kimberley Clinic">
       <Space>
-        <span role="img" aria-label="Korea">
-          🇰🇷
+        <span role="img" aria-label="Kimberley Clinic">
+          Clinic
         </span>
-        Korea (韩国)
+        Kimberley Clinic 
       </Space>
     </Option>
   </Select>
@@ -115,41 +115,41 @@ export default class Doctors extends React.Component {
     style={{
       width: '100%',
     }}
-    placeholder="select one country"
-    defaultValue={['china']}
+    placeholder="select one category"
+    defaultValue={['Department of Liver']}
     onChange={handleChange}
     optionLabelProp="label"
   >
-    <Option value="china" label="China">
+    <Option value="Department of Liver" label="Department of Liver">
       <Space>
-        <span role="img" aria-label="China">
-          🇨🇳
+        <span role="img" aria-label="Department of Liver">
+          Liver
         </span>
-        China (中国)
+        Department of Liver 
       </Space>
     </Option>
-    <Option value="usa" label="USA">
+    <Option value="Department of Orthopedics" label="Department of Orthopedics">
       <Space>
-        <span role="img" aria-label="USA">
-          🇺🇸
+        <span role="img" aria-label="Department of Orthopedics">
+        Orthopedics
         </span>
-        USA (美国)
+        Department of Orthopedics 
       </Space>
     </Option>
-    <Option value="japan" label="Japan">
+    <Option value="Department of Ophthalmology" label="Department of Ophthalmology">
       <Space>
-        <span role="img" aria-label="Japan">
-          🇯🇵
+        <span role="img" aria-label="Department of Ophthalmology">
+        Ophthalmology
         </span>
-        Japan (日本)
+        Department of Ophthalmology
       </Space>
     </Option>
-    <Option value="korea" label="Korea">
+    <Option value="Department of Stomatology" label="Department of Stomatology">
       <Space>
-        <span role="img" aria-label="Korea">
-          🇰🇷
+        <span role="img" aria-label="Department of Stomatology">
+        Stomatology
         </span>
-        Korea (韩国)
+        Department of Stomatology 
       </Space>
     </Option>
   </Select>
@@ -162,7 +162,7 @@ export default class Doctors extends React.Component {
         </div>
       </div>
         <div className="doctors_title">
-        Tend doctors
+        All doctors
         </div>
 
         <div className="doctors_xbox">
@@ -176,7 +176,7 @@ export default class Doctors extends React.Component {
                 </div>
 
                 <div className="doctors_xright">
-                    <p className="title">Dr.Graham Denyer</p>
+                    <p className="title">Dr.John Lee</p>
                     <p className="titletw"> Clinice:Tend Kingsland</p>
                     <p className="titletr">English</p>
                     <p className="dsds">Profile</p>
@@ -192,7 +192,7 @@ export default class Doctors extends React.Component {
     </div>
 
     <div className="doctors_xright">
-        <p className="title">Dr.Graham Denyer</p>
+        <p className="title">Dr.Tom White</p>
         <p className="titletw"> Clinice:Tend Kingsland</p>
         <p className="titletr">English</p>
         <p className="dsds">Profile</p>

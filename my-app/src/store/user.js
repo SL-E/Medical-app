@@ -9,13 +9,13 @@ class user {
           hospital: "纽约市第一人民医院", //所属医院
           doctors: "约翰", //医生名字
           detail: "神经内科，专治一切疑难杂症2",
-          yuyueriqi: [
+          bookriqi: [
             {
               date: 1, //日期 精确到日
               time: [
                 {
                   day: 1,
-                  yuyue: [
+                  book: [
                     {
                       shangwu: "上午",
                       haoma: [
@@ -93,7 +93,7 @@ class user {
     
                 {
                   day: 2,
-                  yuyue: [
+                  book: [
                     {
                       shangwu: "上午",
                       haoma: [
@@ -113,7 +113,7 @@ class user {
               time: [
                 {
                   day: "上午",
-                  yuyue: [
+                  book: [
                     {
                       weizhi: 1,
                       status: 1, //预约的状态1可以 0不可以，2已经预定
@@ -126,7 +126,7 @@ class user {
                 },
                 {
                   day: "下午",
-                  yuyue: [
+                  book: [
                     {
                       weizhi: 1,
                       status: 1, //预约的状态1可以 0不可以，2已经预定
@@ -141,13 +141,13 @@ class user {
           id: 3346542313,
           hospital: "纽约市第一人民医院", //所属医院
           doctors: "汤姆", //医生名字
-          yuyueriqi: [
+          bookriqi: [
             {
               date: 1, //日期 精确到日
               time: [
                 {
                   day: "上午",
-                  yuyue: [
+                  book: [
                     {
                       status: 1, //预约的状态1可以 0不可以，2已经预定
                     },
@@ -156,7 +156,7 @@ class user {
     
                 {
                   day: "下午",
-                  yuyue: [
+                  book: [
                     {
                       status: 1, //预约的状态1可以 0不可以，2已经预定
                     },
@@ -170,7 +170,7 @@ class user {
               time: [
                 {
                   day: "上午",
-                  yuyue: [
+                  book: [
                     {
                       weizhi: 1,
                       status: 1, //预约的状态1可以 0不可以，2已经预定
@@ -183,7 +183,7 @@ class user {
                 },
                 {
                   day: "下午",
-                  yuyue: [
+                  book: [
                     {
                       weizhi: 1,
                       status: 1, //预约的状态1可以 0不可以，2已经预定
@@ -200,13 +200,13 @@ class user {
           doctors: "约翰", //医生名字
           heard: "https://t10.baidu.com/it/u=988188945,954460719&fm=58",
           id: 2323232,
-          yuyueriqi: [
+          bookriqi: [
             {
               date: 1, //日期 精确到日
               time: [
                 {
                   day: "上午",
-                  yuyue: [
+                  book: [
                     {
                       status: 1, //预约的状态1可以 0不可以，2已经预定
                     },
@@ -215,7 +215,7 @@ class user {
     
                 {
                   day: "下午",
-                  yuyue: [
+                  book: [
                     {
                       status: 1, //预约的状态1可以 0不可以，2已经预定
                     },
@@ -229,7 +229,7 @@ class user {
               time: [
                 {
                   day: 1,
-                  yuyue: [
+                  book: [
                     {
                       weizhi: 1,
                       status: 1, //预约的状态1可以 0不可以，2已经预定
@@ -242,7 +242,7 @@ class user {
                 },
                 {
                   day: "下午",
-                  yuyue: [
+                  book: [
                     {
                       weizhi: 1,
                       status: 1, //预约的状态1可以 0不可以，2已经预定

@@ -83,7 +83,7 @@ export default function login()  {
 
       <Form.Item>
         <Button type="primary" htmlType="submit">
-          Submit
+          Login
         </Button>
       </Form.Item>
     </Form>
@@ -94,7 +94,7 @@ export default function login()  {
  <div className="mima">
  <Checkbox ><span className="logn_w">
   Keep me signed in</span> </Checkbox>
-  <span className="logng_r"> Forget Your Password?</span>
+<span className="logng_r"> Forget Your Password?</span>
  </div>
   </div>
 

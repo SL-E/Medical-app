@@ -2,16 +2,16 @@
 const express = require('express');
 //Creates our express server
 const app = express();
-const port = 3000;
+const port = 5000;
 
-//Loads the handlebars module
+/*Loads the handlebars module
 const handlebars = require('express-handlebars');
 
 //Sets our app to use the handlebars engine
 app.set('view engine', 'handlebars');
 
 //Sets handlebars configurations (we will go through them later on)
-app.engine('handlebars', handlebars({defaultLayout: "index"}));
+app.engine('handlebars', handlebars({defaultLayout: "index"}));*/
 
 // Setup multer (files will temporarily be saved in the "temp" folder).
 const path = require("path");
@@ -42,22 +42,23 @@ app.use(session({
     secret: "CS719"
 }));
 
-// Setup our routes
-const siteRouter = require("./routes/site-routes.js");
-app.use(siteRouter);
+// Setup routes
+const hospitalRouter = require("./routes/hospital-routes.js");
+app.use(hospitalRouter);
 const registerRouter = require("./routes/register-routes.js");
 app.use(registerRouter);
 const loginRouter = require("./routes/login-routes.js");
 app.use(loginRouter);
 const logoutRouter = require("./routes/logout-routes.js");
 app.use(logoutRouter);
-const publishRouter = require("./routes/publish-routes.js");
-app.use(publishRouter);
+const doctorRouter = require("./routes/doctor-routes.js");
+app.use(doctorRouter);
+const medicineRouter = require("./routes/medicine-routes.js");
+app.use(medicineRouter);
+const pharmacyRouter = require("./routes/pharmacy-routes.js");
+app.use(pharmacyRouter);
 
 
-//route for restaurant details page
-const resdetails = require("./routes/res-details.js");
-app.use(resdetails);
 
-//Makes the app listen to port 3000
+//Makes the app listen to port 5000
 app.listen(port, () => console.log(`App listening to port ${port}`));

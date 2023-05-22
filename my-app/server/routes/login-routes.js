@@ -2,7 +2,7 @@
 
 const express = require("express");
 const router = express.Router();
-const userDao = require("../modules/users-dao.js");
+const userDao = require("../modules/patientsDao.js");
 const bcrypt = require("bcrypt");
 const {google} = require('googleapis');
 const svgCaptcha = require('svg-captcha');

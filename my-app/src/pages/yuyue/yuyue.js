@@ -1,26 +1,26 @@
 import React from "react";
-import "./book.css";
+import "./yuyue.css";
 import {useState} from "react";
 import touxing from "../../images/touxing.webp";
 import {Select, Space,Button, Modal } from "antd";
 const {Option} = Select;
 
-export default function book() {
+export default function Yuyue() {
   const [data, setData] = useState([
     {
       id: 456545345232,
-      hospital: "纽约市第一人民医院", //所属医院
-      doctors: "约翰", //医生名字
-      detail: "神经内科，专治一切疑难杂症2",
-      bookriqi: [
+      hospital: "Alice Springs Hospital", //所属医院
+      doctors: "John", //医生名字
+      detail: "Neurology department, specializing in all difficult and miscellaneous diseases.",
+      yuyueriqi: [
         {
           date: 1, //日期 精确到日
           time: [
             {
               day: 1,
-              book: [
+              yuyue: [
                 {
-                  shangwu: "上午",
+                  shangwu: "Morning",
                   haoma: [
                     {
                       paixu: 1, //排序
@@ -39,28 +39,28 @@ export default function book() {
                       status: 3, //预约的状态1可以 0不可以，2已经预定
                     }, {
                       paixu: 5, //排序
-                      status: 3, //预约的状态1可以 0不可以，2已经预定
+                      status: 1, //预约的状态1可以 0不可以，2已经预定
                     }, {
                       paixu: 6, //排序
                       status: 3, //预约的状态1可以 0不可以，2已经预定
                     }, {
                       paixu: 7, //排序
-                      status: 3, //预约的状态1可以 0不可以，2已经预定
+                      status: 1, //预约的状态1可以 0不可以，2已经预定
                     }, {
                       paixu: 8, //排序
-                      status: 3, //预约的状态1可以 0不可以，2已经预定
+                      status: 1, //预约的状态1可以 0不可以，2已经预定
                     }, {
                       paixu: 9, //排序
                       status: 3, //预约的状态1可以 0不可以，2已经预定
                     }, {
                       paixu: 10, //排序
-                      status: 3, //预约的状态1可以 0不可以，2已经预定
+                      status: 1, //预约的状态1可以 0不可以，2已经预定
                     }, {
                       paixu: 11, //排序
                       status: 3, //预约的状态1可以 0不可以，2已经预定
                     }, {
                       paixu: 12, //排序
-                      status: 3, //预约的状态1可以 0不可以，2已经预定
+                      status: 0, //预约的状态1可以 0不可以，2已经预定
                     }, {
                       paixu: 13, //排序
                       status: 3, //预约的状态1可以 0不可以，2已经预定
@@ -83,7 +83,7 @@ export default function book() {
                   ],
                 },
                 {
-                  shangwu: "下午",
+                  shangwu: "Afternoon",
                   haoma: [
                     {
                       paixu: 1, //排序
@@ -96,9 +96,9 @@ export default function book() {
 
             {
               day: 2,
-              book: [
+              yuyue: [
                 {
-                  shangwu: "上午",
+                  shangwu: "Morning",
                   haoma: [
                     {
                       paixu: 1, //排序
@@ -108,6 +108,37 @@ export default function book() {
                 },
               ],
             },
+
+            {
+              day: 3,
+              yuyue: [
+                {
+                  shangwu: "Morning",
+                  haoma: [
+                    {
+                      paixu: 1, //排序
+                      status: 1, //预约的状态1可以 0不可以，2已经预定
+                    },
+                  ],
+                },
+              ],
+            },
+
+            {
+              day: 4,
+              yuyue: [
+                {
+                  shangwu: "Morning",
+                  haoma: [
+                    {
+                      paixu: 1, //排序
+                      status: 1, //预约的状态1可以 0不可以，2已经预定
+                    },
+                  ],
+                },
+              ],
+            }
+
           ],
         },
 
@@ -115,21 +146,26 @@ export default function book() {
           date: 2, //日期 精确到日
           time: [
             {
-              day: "上午",
-              book: [
+              day: 1,
+              yuyue: [
                 {
-                  weizhi: 1,
+                  shangwu: "Morning",
+                  haoma: [
+                  {weizhi: 1,
                   status: 1, //预约的状态1可以 0不可以，2已经预定
-                },
+                  },
+                
                 {
                   weizhi: 2,
                   status: 1, //预约的状态1可以 0不可以，2已经预定
                 },
               ],
+                },
+              ],
             },
             {
-              day: "下午",
-              book: [
+              day: "Afternoon",
+              yuyue: [
                 {
                   weizhi: 1,
                   status: 1, //预约的状态1可以 0不可以，2已经预定
@@ -142,24 +178,25 @@ export default function book() {
     },
     {
       id: 3346542313,
-      hospital: "纽约市第一人民医院", //所属医院
-      doctors: "汤姆", //医生名字
-      bookriqi: [
+      hospital: "Alice Springs Hospital", //所属医院
+      doctors: "Tom", //医生名字
+      yuyueriqi: [
         {
           date: 1, //日期 精确到日
           time: [
             {
-              day: "上午",
-              book: [
+              day: 1,
+              yuyue: [
                 {
+                  
                   status: 1, //预约的状态1可以 0不可以，2已经预定
                 },
               ],
             },
 
             {
-              day: "下午",
-              book: [
+              day: 2,
+              yuyue: [
                 {
                   status: 1, //预约的状态1可以 0不可以，2已经预定
                 },
@@ -172,8 +209,8 @@ export default function book() {
           date: 2, //日期 精确到日
           time: [
             {
-              day: "上午",
-              book: [
+              day: 1,
+              yuyue: [
                 {
                   weizhi: 1,
                   status: 1, //预约的状态1可以 0不可以，2已经预定
@@ -185,8 +222,8 @@ export default function book() {
               ],
             },
             {
-              day: "下午",
-              book: [
+              day: 2,
+              yuyue: [
                 {
                   weizhi: 1,
                   status: 1, //预约的状态1可以 0不可以，2已经预定
@@ -199,17 +236,17 @@ export default function book() {
     },
 
     {
-      hospital: "华盛顿三甲医院", //所属医院
-      doctors: "约翰", //医生名字
+      hospital: "Sen Health Clinic", //所属医院
+      doctors: "John", //医生名字
       heard: "https://t10.baidu.com/it/u=988188945,954460719&fm=58",
       id: 2323232,
-      bookriqi: [
+      yuyueriqi: [
         {
           date: 1, //日期 精确到日
           time: [
             {
-              day: "上午",
-              book: [
+              day: 1,
+              yuyue: [
                 {
                   status: 1, //预约的状态1可以 0不可以，2已经预定
                 },
@@ -217,8 +254,8 @@ export default function book() {
             },
 
             {
-              day: "下午",
-              book: [
+              day: 2,
+              yuyue: [
                 {
                   status: 1, //预约的状态1可以 0不可以，2已经预定
                 },
@@ -232,7 +269,7 @@ export default function book() {
           time: [
             {
               day: 1,
-              book: [
+              yuyue: [
                 {
                   weizhi: 1,
                   status: 1, //预约的状态1可以 0不可以，2已经预定
@@ -244,8 +281,8 @@ export default function book() {
               ],
             },
             {
-              day: "下午",
-              book: [
+              day: 2,
+              yuyue: [
                 {
                   weizhi: 1,
                   status: 1, //预约的状态1可以 0不可以，2已经预定
@@ -259,16 +296,16 @@ export default function book() {
   ]);
   const [options, setOptions] = useState([
     {
-      value: "纽约市第一人民医院",
-      label: "纽约市第一人民医院",
+      value: "Alice Springs Hospital",
+      label: "Alice Springs Hospital",
     },
     {
-      value: "华盛顿三甲医院",
-      label: "华盛顿三甲医院",
+      value: "Sen Health Clinic",
+      label: "Sen Health Clinic",
     },
     {
-      value: "白宫中医诊所",
-      label: "白宫中医诊所",
+      value: "Enrich Living Sercives",
+      label: "Enrich Living Sercives",
     },
     // {
     //   value: 'disabled',
@@ -304,9 +341,9 @@ export default function book() {
   let [doutrri, setDoutrri] = useState([]);
   // 这是选择月份后的数据
   let [doutrda, setDoutrda] = useState([]);
-  // 上午的数据
+  // Morning的数据
   let [shangwu, setShangwu] = useState({haoma:[]});
-  // 下午的数据
+  // Afternoon的数据
   let [xiawu, setXiawu] = useState({haoma:[]});
   // 筛选号
   const handleChangec = (value) => {
@@ -317,12 +354,12 @@ export default function book() {
         console.log(doutrda);
       }
     });
-    doutrda.book.forEach((item)=>{
-      if(item.shangwu=='上午'){
+    doutrda.yuyue.forEach((item)=>{
+      if(item.shangwu=='Morning'){
         setShangwu(shangwu=item)
         console.log(shangwu);
       }
-      if(item.shangwu=='下午'){
+      if(item.shangwu=='Afternoon'){
         setXiawu(xiawu=item)
         console.log(xiawu);
       }
@@ -332,7 +369,7 @@ export default function book() {
   // 筛选月份
   const handleChangeM = (value) => {
     console.log(value);
-    doutr.bookriqi.forEach((item) => {
+    doutr.yuyueriqi.forEach((item) => {
       if (item.date == value) {
         setDoutrri((doutrri = item));
       }
@@ -342,7 +379,7 @@ export default function book() {
     doutrri.time.forEach((item) => {
       let arr = {};
       arr.value = item.day;
-      arr.label = item.day + "号";
+      arr.label = "No."+item.day ;
       num.push(arr);
     });
     setOptione((optione = num));
@@ -358,10 +395,10 @@ export default function book() {
     });
     let num = [];
     // 获取时间
-    doutr.bookriqi.forEach((item) => {
+    doutr.yuyueriqi.forEach((item) => {
       let arr = {};
       arr.value = item.date;
-      arr.label = item.date + "月";
+      arr.label = "Mouth:"+item.date;
       num.push(arr);
     });
     setOptionf((optionf = num));
@@ -456,7 +493,7 @@ export default function book() {
             options={optiont}
           />
           <Select
-            placeholder="Choose a Months"
+            placeholder="Choose a Month"
             style={{
               width: 200,
             }}
@@ -500,7 +537,7 @@ export default function book() {
                 </div>
                 <div className="ueras_xdas">
                   <p>{doutr.doctors}</p>
-                  <p> 你好！</p>
+                  <p> Hello!</p>
                 </div>
               </div>
 
@@ -526,7 +563,7 @@ export default function book() {
               </div>
               <div className="shuzi">
                 <ul>
-                  <li>1</li>
+                  <li>1    </li>
                   <li>2</li>
                   <li>3</li>
                   <li>4</li>
@@ -568,7 +605,7 @@ export default function book() {
               
                   return <li className="boxxx boxxx2" key={item.paixu}>
                  
-                 On reservation
+                On
                  </li>
                 }
               }
@@ -630,7 +667,7 @@ export default function book() {
               
                   return <li className="boxxx boxxx2" key={item.paixu}>
                  
-                 On reservation
+               Reserved
                  </li>
                 }
               }

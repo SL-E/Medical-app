@@ -5,13 +5,11 @@ import logo from "./images/logo.webp";
 import user from "./pages/user/user";
 import drug from "./pages/drug/drug";
 import Hospitals from "./pages/Hospitals/Hospitals";
-
-import Pharmacies from "./pages/Pharmacies/Pharmacies";
-
 import Doctors from "./pages/Doctors/Doctors";
 import login from "./pages/login/login";
+import Pharmacies from "./pages/Pharmacies/Pharmacies";
 import About from "./pages/About/About";
-import book from "./pages/book/book";
+import yuyue from "./pages/yuyue/yuyue";
 import Medicines from "./pages/Medicines/Medicines";
 import {observer} from 'mobx-react-lite'
 import {userdata} from './store/user'
@@ -30,8 +28,8 @@ function App() {
 
               <div className="title">
                 <span>
-                  Medical Service <br></br>
-                  in NewZealand
+                  MedicalService <br></br>
+                  inNewZealand
                 </span>
               </div>
               <div className="daohang">
@@ -40,12 +38,21 @@ function App() {
                 </Link>
                 
                 <Link className="dsds" to="/home">
-                  help
+                  Help
                 </Link>
 
-                <Link className="dsds">FAQs</Link>
-                <Link className="dsds">Feedback</Link>
-                <Link className="dsds">Get the APP</Link>
+                <Link className="dsds" to="/FAQs">
+                  FAQs
+                </Link>
+
+                <Link className="dsds" to="/Feedback">
+                  Feedback
+                </Link>
+
+                <Link className="dsds" to="/Get the APP">
+                  Get the APP
+                </Link>
+
                 <Link className="dsds" to="/login">
                   log in
                 </Link>
@@ -55,7 +62,7 @@ function App() {
               </div>
 {userdata.token? <Link className="sdasa" to="/user">
               profile<br></br>
-                photo
+               photo
 
                 {userdata.token}
               </Link>:'' }
@@ -65,23 +72,22 @@ function App() {
 
           <div className="navs">
             <div className="nacBox">
-              <Link className="dsdsaa" to="/book">
+              <Link className="dsdsaa" to="/yuyue">
                 Book
               </Link>
-
               <Link className="dsdsaa" to="/Hospitals">
                 Hospitals&Clinics
               </Link>
 
+              
               <Link className="dsdsaa" to="/Pharmacies">
                 Pharmacies
               </Link>
-
               <Link className="dsdsaa" to="/Doctors">
                 Doctors
               </Link>
 
-              <Link className="dsdsaa" to="/Drug">
+              <Link className="dsdsaa" to="/drug">
                 Medicines
               </Link>
             </div>
@@ -92,7 +98,7 @@ function App() {
           <Route path="/guanli" Component={guanli}></Route>
             <Route path="/login" Component={login}></Route>
             <Route path="/About" Component={About}></Route>
-            <Route path="/book" Component={book}></Route>
+            <Route path="/yuyue" Component={yuyue}></Route>
             <Route path="/" Component={About}></Route>
             <Route path="/Medicines" Component={Medicines}></Route>
             <Route path="/home" Component={home}></Route>

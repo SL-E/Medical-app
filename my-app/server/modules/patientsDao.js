@@ -44,7 +44,7 @@ async function retrieveAllEmail() {
 /**
  * Gets all doctor with the given doctor from the database.
  *
- * @param {string} hospitalclinic the hospitalclinic of the restaurant to get.
+ * @param {string} hospitalclinic the hospitalclinic to get.
  */
 async function retrieveAlldoctorByHospitalclinic(hospitalclinic) {
     const db = await database;
